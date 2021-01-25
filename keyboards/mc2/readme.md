@@ -1,15 +1,14 @@
-# 1up60hse (hot swap edition)
+Copyright <2021> <nania12138> <nania12138@gmail.com> @<nania12138>
 
-![1up60hse](https://i2.wp.com/www.1upkeyboards.com/wp-content/uploads/2018/08/PCB-1up-60-hotswap-group-RGB.jpg?fit=1280%2C1280&ssl=1)
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
 
-A 60% PCB with USB C, RGB underglow, backlighting, hotswappable switches, and a standard ANSI layout.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 
-Keyboard Maintainer: [MechMerlin](https://github.com/mechmerlin)  
-Hardware Supported: 1up60hse 60% PCB.  
-Hardware Availability: [1upkeyboards.com](https://www.1upkeyboards.com/shop/controllers/1up-rgb-pcb-hse/)
-
-Make example for this keyboard (after setting up your build environment):
-
-    make 1upkeyboards/1up60hse:default
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.

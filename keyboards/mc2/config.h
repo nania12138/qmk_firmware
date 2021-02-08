@@ -4,20 +4,20 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0x4D43  //MC
+#define PRODUCT_ID      0x0001  //first
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    qmkbuilder
-#define PRODUCT         keyboard
-#define DESCRIPTION     Keyboard
+#define MANUFACTURER    MC2
+#define PRODUCT         MC2 MX6
+#define DESCRIPTION     A 6 keys small RGB keyboards
 
 /* key matrix size */
 #define MATRIX_ROWS 2
 #define MATRIX_COLS 3
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { F7, F6 }
-#define MATRIX_COL_PINS { F5, F4, F1 }
+#define MATRIX_ROW_PINS { C6, B5 }
+#define MATRIX_COL_PINS { D7, B4, B6 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -46,7 +46,7 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
-#define RGB_DI_PIN F0
+//#define RGB_DI_PIN F0
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
 #define DRIVER_LED_TOTAL 5
@@ -54,6 +54,20 @@
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
+
+
 #endif
+// This is a 7-bit address, that gets left-shifted and bit 0
+// set to 0 for write, 1 for read (as per I2C protocol)
+// The address will vary depending on your wiring:
+// 0b1110100 AD <-> GND
+// 0b1110111 AD <-> VCC
+// 0b1110101 AD <-> SCL
+// 0b1110110 AD <-> SDA
+#define DRIVER_ADDR_1 0b1110100
+
+#define DRIVER_COUNT 1
+#define DRIVER_1_LED_TOTAL 6
+#define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL)
 
 #endif

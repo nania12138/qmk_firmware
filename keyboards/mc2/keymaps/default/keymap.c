@@ -4,71 +4,71 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	KEYMAP(
 		KC_1, KC_2, KC_3,
-		KC_DOT, KC_0),
+		KC_4, KC_5, KC_6),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS),
+		KC_TRNS, KC_TRNS, KC_TRNS),
 
 	KEYMAP(
 		KC_TRNS, KC_TRNS, KC_TRNS,
-		KC_TRNS, KC_TRNS)
+		KC_TRNS, KC_TRNS, KC_TRNS)
 
 };
 
-led_config_t g_led_config = { {
+/*led_config_t g_led_config = { {
   // Key Matrix to LED Index
   //{   6     , NO_LED    , 7     },
   { 2  , 1    , 0},
@@ -80,4 +80,4 @@ led_config_t g_led_config = { {
 }, {
   // LED Index to Flag
   1, 1, 1, 1, 1//, 1,1,1,1
-} };
+} };*/

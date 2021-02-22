@@ -16,8 +16,8 @@
 #define MATRIX_COLS 3
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { C6, B5 }
-#define MATRIX_COL_PINS { D7, B4, B6 }
+#define MATRIX_ROW_PINS { B6, C6 }
+#define MATRIX_COL_PINS { D7, B4, B5 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -57,6 +57,7 @@
 
 
 #endif
+
 // This is a 7-bit address, that gets left-shifted and bit 0
 // set to 0 for write, 1 for read (as per I2C protocol)
 // The address will vary depending on your wiring:
@@ -69,5 +70,9 @@
 #define DRIVER_COUNT 1
 #define DRIVER_1_LED_TOTAL 6
 #define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL)
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_HUE_STEP 8
+#define RGBLIGHT_SAT_STEP 8
+#define RGBLIGHT_VAL_STEP 8
 
 #endif

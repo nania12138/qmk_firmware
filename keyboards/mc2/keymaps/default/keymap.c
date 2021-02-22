@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-/*led_config_t g_led_config = { {
+led_config_t g_led_config = { {
   // Key Matrix to LED Index
   //{   6     , NO_LED    , 7     },
   { 2  , 1    , 0},
@@ -80,4 +80,4 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 }, {
   // LED Index to Flag
   1, 1, 1, 1, 1//, 1,1,1,1
-} };*/
+} };

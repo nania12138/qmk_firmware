@@ -1,4 +1,4 @@
-Copyright <2021> <nania12138> <nania12138@gmail.com> @<nania12138>
+Copyright <year> <name> <email> @<github_username>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

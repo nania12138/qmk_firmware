@@ -1,6 +1,17 @@
 # MCU name
 MCU = atmega32u4
 
+# Bootloader selection
+#   Teensy       halfkay
+#   Pro Micro    caterina
+#   Atmel DFU    atmel-dfu
+#   LUFA DFU     lufa-dfu
+#   QMK DFU      qmk-dfu
+#   ATmega32A    bootloadHID
+#   ATmega328P   USBasp
+BOOTLOADER = atmel-dfu
+
+
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
 #     processor frequency in Hz. You can then use this symbol in your source code to
@@ -40,27 +51,35 @@ MCU = atmega32u4
 # Boot Section Size in *bytes*
 #OPT_DEFS += -DBOOTLOADER_SIZE=4096
 
+# Do not put the microcontroller into power saving mode
+# when we get USB suspend event. We want it to keep updating
+# backlight effects.
+OPT_DEFS += -DNO_SUSPEND_POWER_DOWN
+
 
 # Build Options
 #   comment out to disable the options.
 #
-BOOTMAGIC_ENABLE ?= yes	# Virtual DIP switch configuration(+1000)
-MOUSEKEY_ENABLE ?= no	# Mouse keys(+4700)
-EXTRAKEY_ENABLE ?= yes	# Audio control and System control(+450)
-CONSOLE_ENABLE ?= yes	# Console for debug(+400)
-COMMAND_ENABLE ?= no    # Commands for debug and configuration
-# Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
-SLEEP_LED_ENABLE ?= no  # Breathing sleep LED during USB suspend
-NKRO_ENABLE ?= yes		# USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
-BACKLIGHT_ENABLE ?= no  # Enable keyboard backlight functionality
-AUDIO_ENABLE ?= no
-RGBLIGHT_ENABLE ?= no
-RGB_MATRIX_ENABLE = yes
-#RGB_MATRIX_DRIVER = WS2812
-RGB_MATRIX_DRIVER = IS31FL3731
+BOOTMAGIC_ENABLE = lite	# Virtual DIP switch configuration(+1000)
+MOUSEKEY_ENABLE = no	# Mouse keys(+4700)
+EXTRAKEY_ENABLE = yes	# Audio control and System control(+450)
+CONSOLE_ENABLE = yes	# Console for debug(+400)
+COMMAND_ENABLE = no    # Commands for debug and configuration
+NKRO_ENABLE = yes		# USB Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
+AUDIO_ENABLE = no           # Audio output on port C6
 MIDI_ENABLE = no            # MIDI support
 UNICODE_ENABLE = no         # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 
-LTO_ENABLE = yes
+BACKLIGHT_ENABLE = no  # Enable keyboard backlight functionality
+RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.  Do not enable this with audio at the same time.
+RGB_MATRIX_ENABLE = yes
+#RGB_MATRIX_DRIVER = WS2812
+RGB_MATRIX_DRIVER = IS31FL3731
+
+# Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
+SLEEP_LED_ENABLE = no  # Breathing sleep LED during USB suspend
+
+CIE1931_CURVE = yes
+#LTO_ENABLE = yes

@@ -16,8 +16,8 @@
 #define MATRIX_COLS 3
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { B6, C6 }
-#define MATRIX_COL_PINS { D7, B4, B5 }
+#define MATRIX_ROW_PINS { B0, B7 }
+#define MATRIX_COL_PINS { D5, D3, D2 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -46,14 +46,9 @@
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
 
-//#define RGB_DI_PIN F0
+#define RGB_DI_PIN E6
 #ifdef RGB_DI_PIN
-#define RGBLIGHT_ANIMATIONS
-#define DRIVER_LED_TOTAL 5
-#define RGBLED_NUM 9
-#define RGBLIGHT_HUE_STEP 8
-#define RGBLIGHT_SAT_STEP 8
-#define RGBLIGHT_VAL_STEP 8
+#define RGBLED_NUM 4
 
 
 #endif
@@ -65,7 +60,8 @@
 // 0b1110111 AD <-> VCC
 // 0b1110101 AD <-> SCL
 // 0b1110110 AD <-> SDA
-#define DRIVER_ADDR_1 0b1110100
+#define DRIVER_ADDR_1 0b1010000
+#define DRIVER_ADDR_2 0b1010000
 
 #define DRIVER_COUNT 1
 #define DRIVER_1_LED_TOTAL 6
